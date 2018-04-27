@@ -19,10 +19,10 @@ class MusicTest(SampleBase):
 
 
 
-        for offset in range(32):
+        for offset in range(16):
             canvas.SetPixel(0, offset, 0, 255, 0)
             time.sleep(0.25)
-            graphics.DrawLine(canvas, 1, 1, 1, 5, red)
+
 
 # Main function
 if __name__ == "__main__":
