@@ -17,12 +17,11 @@ class MusicTest(SampleBase):
         green = graphics.Color(0, 255, 0)
         blue = graphics.Color(0, 0, 255)
 
-        graphics.DrawLine(canvas, 1, 1, 1, 5, red)
 
-        offset = 0
-        while offset < 10:
+
+        for offset in range(32):
             canvas.SetPixel(0, offset, 0, 0, 0)
-            offset += 1
+            graphics.DrawLine(canvas, 1, 1, 1, 5, red)
             time.sleep(0.25)
 
 # Main function
