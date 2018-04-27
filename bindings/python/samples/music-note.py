@@ -20,7 +20,7 @@ class MusicTest(SampleBase):
 
 
         for offset in range(32):
-            canvas.offsetTop(offset)
+            canvas.SetPixel(0, offset, 0, 255, 0)
             time.sleep(0.25)
             graphics.DrawLine(canvas, 1, 1, 1, 5, red)
 
