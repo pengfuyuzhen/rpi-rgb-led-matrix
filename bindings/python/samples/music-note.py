@@ -18,9 +18,11 @@ class MusicTest(SampleBase):
         blue = graphics.Color(0, 0, 255)
 
         graphics.DrawLine(canvas, 1, 1, 1, 5, red)
-
-        time.sleep(10)   # show display for 10 seconds before exit
-
+        time.sleep(1)
+        graphics.DrawLine(canvas, 1, 2, 1, 6, red)
+        time.sleep(1)
+        graphics.DrawLine(canvas, 1, 3, 1, 7, red)
+        time.sleep(1)
 
 # Main function
 if __name__ == "__main__":
